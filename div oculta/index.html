@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz de Lógica de Programação</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Página 1: Tela Inicial -->
+    <div class="page" id="page1">
+      <h1>Quiz</h1>
+      <button onclick="startQuiz()">TENTAR a provação</button>
+    </div>
+
+    <!-- Página 2: Pergunta 1 -->
+    <div class="page" id="page2">
+      <h2>Qual o nome deste personagem???</h2>
+      <img src="Cordeiro Feliz 2.png" alt="Cordeiro feliz">
+      <button onclick="responder(1, true)">Cordeiro</button>
+      <button onclick="responder(1, false)">Lady Gaga</button>
+      <button onclick="responder(1, false)">Shaun o carneiro</button>
+      <button onclick="responder(1, false)">Bode</button>
+    </div>
+
+    <!-- Página 3: Pergunta 2 -->
+    <div class="page" id="page3">
+      <h2>Essa cabeça pertence a qual animal?</h2>
+      <img class="corvo" src="images-removebg-preview 1.png" alt="Corvo feliz">
+      <button onclick="responder(2, false)">Galinha</button>
+      <button onclick="responder(2, false)">Martelo</button>
+      <button onclick="responder(2, false)">FURADEIRA ANOS  7044</button>
+      <button onclick="responder(2, true)">Corvo</button>
+    </div>
+
+    <!-- Página 4: Pergunta 3 -->
+    <div class="page" id="page4">
+      <h2>O que a carta O ARACNÍDEO faz???</h2>
+      <img class="Aranha" src="image 1.png" alt="Aranha carta">
+      <button onclick="responder(3, true)">Envenena os inimigos</button>
+      <button onclick="responder(3, false)">Homem-Aranha 🕸️</button>
+      <button onclick="responder(3, false)">ARANHA ARANHA ARNHA</button>
+      <button onclick="responder(3, false)">Te doa mais patas</button>
+    </div>
+
+    <!-- Página 5: Pergunta 4 -->
+    <div class="page" id="page4">
+      <h2>O que a carta O ARACNÍDEO faz???</h2>
+      <img class="Invocacao" src="image 2.png" alt="Cornos">
+      <button onclick="responder(3, true)">Envenena os inimigos</button>
+      <button onclick="responder(3, false)">Homem-Aranha 🕸️</button>
+      <button onclick="responder(3, false)">ARANHA ARANHA ARNHA</button>
+      <button onclick="responder(3, false)">Te doa mais patas</button>
+    </div>
+
+    <!-- Página 8: Resultado -->
+    <div class="page" id="page5">
+      <h1>Resultado</h1>
+      <p id="score"></p>
+      <button onclick="startQuiz()">Tentar novamente</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
