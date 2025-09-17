@@ -23,12 +23,12 @@ function startQuiz() {
 function responder(pergunta, correto) {
   if (correto) score++;
   currentPage++;
-  if (currentPage <= 4) {
+  if (currentPage <= 7) {
     showPage(currentPage);
   } else {
     // Página de resultado
-    document.getElementById("score").innerText = `Você acertou ${score} de 3 perguntas!`;
-    showPage(5);
+    document.getElementById("score").innerText = `VOCÊ ACERTOU ${score} DE 6 PERGUNTAS!`;
+    showPage(8);
   }
 }
 
